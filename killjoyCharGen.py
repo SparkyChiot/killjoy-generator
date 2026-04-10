@@ -1,5 +1,63 @@
 import random
+prefixes = [
+    {
+        "name": "Miss",
+        "frequency": 1,
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Mister",
+        "frequency": 1,
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Doc",
+        "frequency": 1,
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Saint",
+        "frequency": 1.5,
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Lady",
+        "frequency": 1,
+        "vibes": ["national anthem", "retro"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Lord",
+        "frequency": 1,
+        "vibes": ["desert punk", "rebel"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Kid",
+        "frequency": 1,
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+]
 
+# {
+#         "name": "",
+#         "frequency": 1,
+#         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
+#         "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+#         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+#     },
 
 def introText():
     vibe = 0
@@ -29,7 +87,7 @@ def introText():
                 print("5) Rebel")
                 print("6) Messenger")
                 print("7) Mechanic")
-                print("8) Blaster")
+                print("8) Fighter")
                 role = int(input())
                 if (role < 1 or role > 8):
                     print("invalid answer, please type a number between 1 and 8")
