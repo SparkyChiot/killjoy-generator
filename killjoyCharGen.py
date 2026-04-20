@@ -2,66 +2,147 @@ from random import *
 prefixes = [
     {
         "name": "Miss",
-        "frequency": 1,
         "vibes": ["any"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Mister",
-        "frequency": 1,
         "vibes": ["any"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Doc",
-        "frequency": 1,
         "vibes": ["any"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Saint",
-        "frequency": 1.5,
         "vibes": ["desert punk", "national anthem", "rebel"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Lady",
-        "frequency": 1,
-        "vibes": ["national anthem", "retro"],
+        "vibes": ["any", "national anthem", "retro"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Lord",
-        "frequency": 1,
-        "vibes": ["desert punk", "rebel"],
+        "vibes": ["any" "desert punk", "rebel"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Kid",
-        "frequency": 1,
         "vibes": ["any"],
         "colors": ["any"],
         "roles": ["any"]
     },
     {
         "name": "Captain",
-        "frequency": 0.5,
         "vibes": ["desert punk", "national anthem", "retro"],
         "colors": ["any"],
-        "roles": ["scout", "driver", "rebel", "fighter"]
+        "roles": ["any", "scout", "driver", "rebel", "fighter"]
     },
     {
         "name": "Baby",
-        "frequency": 0.5,
         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
         "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+]
+
+modifiers = [
+    {
+        "name": "Static",
+        "vibes": ["neon", "retro"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "nomad", "rebel", "fighter"]
+    },
+    {
+        "name": "Rust",
+        "vibes": ["desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "red", "orange",],
+        "roles": ["any", "mechanic",]
+    },
+    {
+        "name": "Neon",
+        "vibes": ["neon", "national anthem"],
+        "colors": ["red", "orange", "yellow", "green", "blue", "purple", "pink", "rainbow"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Acid",
+        "vibes": ["any", "neon"],
+        "colors": ["any", "green"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Ash",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["red", "neutrals"],
+        "roles": ["any", "fighter"]
+    },
+    {
+        "name": "Ghost",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "nomad", "fighter"]
+    },
+    {
+        "name": "Velvet",
+        "vibes": ["national anthem", "retro"],
+        "colors": ["any", "red", "purple"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Chrome",
+        "vibes": ["neon", "retro", "rebel"],
+        "colors": ["any", "neutrals", "rainbow"],
+        "roles": ["any", "driver"]
+    },
+    {
+        "name": "Hollow",
+        "vibes": ["desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "nomad", "rebel"]
+    },
+    {
+        "name": "Riot",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any", "red"],
+        "roles": ["any", "rebel", "fighter"]
+    },
+]
+
+cores = [
+    {
+        "name": "Motel",
+        "vibes": ["neon", "national anthem", "retro"],
+        "colors": ["any"],
+        "roles": ["any", "driver", "rebel"]
+    },
+    {
+        "name": "Knife",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "fighter"]
+    },
+    {
+        "name": "Radio",
+        "vibes": ["any", "neon", "retro", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "driver", "messenger"]
+    },
+    {
+        "name": "Petal",
+        "vibes": ["any", "desert punk", "national anthem"],
+        "colors": ["any", "pink", "rainbow"],
+        "roles": ["any", "nomad", "driver"]
     },
 ]
 
@@ -100,43 +181,42 @@ pronouns = [
     {
         "3rdSingular": "he",
         "objective": "him",
-        "plurality": "singular"
+        "plurality": "singular",
     },
     {
         "3rdSingular": "she",
         "objective": "her",
-        "plurality": "singular"
+        "plurality": "singular",
     },
     {
         "3rdSingular": "they",
         "objective": "them",
-        "plurality": "plural"
+        "plurality": "plural",
     },
     {
         "3rdSingular": "it",
         "objective": "its",
-        "plurality": "singular"
+        "plurality": "singular",
     },
     {
         "3rdSingular": "xey",
         "objective": "xem",
-        "plurality": "plural"
+        "plurality": "plural",
     },
     {
         "3rdSingular": "fae",
         "objective": "faer",
-        "plurality": "plural"
+        "plurality": "plural",
     },
     {
         "3rdSingular": "ey",
         "objective": "em",
-        "plurality": "plural"
+        "plurality": "plural",
     },
 ]
 
 # {
 #         "name": "",
-#         "frequency": 1,
 #         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
 #         "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
 #         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
@@ -196,17 +276,23 @@ def getWordsFromChoices(vibe, role, color):
         color = choice(colors)
     return vibe , role , color
 
-def getNamePartFromChoices(vibe, role, color, namePart):
+def getPartFromChoices(vibe, role, color, part):
     namesList = []
-    for each in namePart:
+    for each in part:
         matches = 0
-        if vibe in each["vibes"] or "any" in each["vibes"]:
+        if vibe in each["vibes"] and "any" in each["vibes"]:
+            matches += 2
+        elif vibe in each["vibes"] or "any" in each["vibes"]:
             matches += 1
-    
-        if role in each["roles"] or "any" in each["roles"]:
+
+        if role in each["roles"] and "any" in each["roles"]:
+            matches += 2
+        elif role in each["roles"] or "any" in each["roles"]:
             matches += 1
         
-        if color in each["colors"] or "any" in each["colors"]:
+        if color in each["colors"] and "any" in each["colors"]:
+            matches += 2
+        elif color in each["colors"] or "any" in each["colors"]:
             matches += 1
         
         #append the name to the namesList * amt of matches
@@ -219,15 +305,19 @@ def getPronounsPhrase():
     pronoun2 = choice(pronouns)
     if pronoun1["plurality"] == "singular":
         useTense = "uses"
+        loveForm = "loves"
     else:
         useTense = "use"
-    phrase = pronoun1["3rdSingular"] + " " + useTense + " " + pronoun1["3rdSingular"] + "/" + pronoun2["objective"] + " pronouns"
+        loveForm = "love"
+    phrase = pronoun1["3rdSingular"] + " " + useTense + " " + pronoun1["3rdSingular"] + "/" + pronoun2["objective"] + " pronouns and " + loveForm + " "
     return phrase
+
+
 
 def assembleCharacter(vibe, role, color, prefix, modifier, core, top, bottom, hobby, pronounPhrase):
     joyName = prefix + " " + modifier + " " + core
     secondColor = choice(colors)
-    phrase = joyName + " is a " + vibe + " " + role + " with a " + color + " " + top + " and " + secondColor + " " + bottom + ". " + pronounPhrase + " and love " + hobby
+    phrase = joyName + " is a " + vibe + " " + role + " with a " + color + " " + top + " and " + secondColor + " " + bottom + ". " + pronounPhrase + hobby
     return phrase
 
 def introText():
@@ -295,10 +385,24 @@ def main():
     vibe, role, color = introText()
     vibe, role, color = getWordsFromChoices(vibe, role, color)
     pronounPhrase = getPronounsPhrase()
-    prefix = getNamePartFromChoices(vibe, role, color, prefixes)
-    modifier = getNamePartFromChoices(vibe, role, color, modifiers)
-    core = getNamePartFromChoices(vibe, role, color, cores)
-    print(assembleCharacter(vibe, role, color, prefix, modifier, core, "shirt", "jeans", "to kill", pronounPhrase))
+    prefix = getPartFromChoices(vibe, role, color, prefixes)
+    modifier = getPartFromChoices(vibe, role, color, modifiers)
+    core = getPartFromChoices(vibe, role, color, cores)
+    top = getPartFromChoices(vibe, role, color, tops)
+    bottom = getPartFromChoices(vibe, role, color, bottoms)
+    hobby = getPartFromChoices(vibe, role, color, hobbies)
+    # decide how many name parts to use
+    diceRoll = randint(1,100)
+    if diceRoll >= 45:
+        prefix = ""
+    diceRoll = randint(1,100)
+    if diceRoll >= 80:
+        modifier = ""
+    diceRoll = randint(1,100)
+    if diceRoll <= 10:
+        modifier = "" 
+        prefix = ""
+    print(assembleCharacter(vibe, role, color, prefix, modifier, core, top, bottom, hobby, pronounPhrase))
     
 
 main()
