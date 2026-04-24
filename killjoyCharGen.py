@@ -146,6 +146,78 @@ cores = [
     },
 ]
 
+clothingModifiers = [
+    {
+        "name": "Distressed",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "nomad", "rebel", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "Weathered",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "rebel", "fighter"]
+    },
+    {
+        "name": "Pristine",
+        "vibes": ["any", "neon", "retro"],
+        "colors": ["any"],
+        "roles": ["any", "medic", "driver", "messenger"]
+    },
+    {
+        "name": "Embroidered",
+        "vibes": ["any"],
+        "colors": ["any", "rainbow"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Frayed",
+        "vibes": ["any", "desert punk", "national anthem", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "nomad", "rebel", "mechanic", "fighter"]
+    },
+    {
+        "name": "Ripped",
+        "vibes": ["any", "neon", "desert punk", "national anthem", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "scout", "nomad", "rebel", "mechanic", "fighter"]
+    },
+    {
+        "name": "Patchwork",
+        "vibes": ["any","desert punk", "national anthem"],
+        "colors": ["any", "red", "neutrals", "rainbow"],
+        "roles": ["any", "scout", "medic", "nomad", "rebel", "mechanic"]
+    },
+    {
+        "name": "Oversized",
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any", "nomad", "rebel", "messenger"]
+    },
+    {
+        "name": "Fitted",
+        "vibes": ["any", "neon", "national anthem", "retro", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "medic", "driver", "mechanic", "fighter"]
+    },
+]
+
+clothingMaterials = [
+    {
+        "name": "Cotton",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "scout", "medic", "messenger", "mechanic"]
+    },
+    {
+        "name": "Linen",
+        "vibes": ["any", "desert punk", "retro", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "medic", "nomad", "messenger"]
+    },
+]
+
 vibes = [
     "neon",
     "desert punk",
