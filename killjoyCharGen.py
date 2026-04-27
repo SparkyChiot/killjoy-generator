@@ -365,6 +365,39 @@ accessories = [
     },
 ]
 
+hobbies = [
+    {
+        "name": "scour the zones for vintage tech",
+        "vibes": ["any"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "nomad", "mechanic"]
+    },
+    {
+        "name": "hotwire abandoned cars",
+        "vibes": ["any", "desert punk", "national anthem", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "nomad", "driver", "rebel", "mechanic"]
+    },
+    {
+        "name": "make armor out of scrap metal",
+        "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "roles": ["any", "nomad", "driver", "rebel", "fighter"]
+    },
+    {
+        "name": "tag ruins with spray paint",
+        "vibes": ["any", "neon", "desert punk"],
+        "colors": ["any", "rainbow"],
+        "roles": ["any", "scout", "nomad", "rebel", "fighter"]
+    },
+    {
+        "name": "broadcast pirate radio signals",
+        "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+]
+
 vibes = [
     "neon",
     "desert punk",
