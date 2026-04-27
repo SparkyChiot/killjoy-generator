@@ -216,6 +216,153 @@ clothingMaterials = [
         "colors": ["any", "neutrals"],
         "roles": ["any", "scout", "medic", "nomad", "messenger"]
     },
+    {
+        "name": "Silk",
+        "vibes": ["neon", "national anthem", "retro"],
+        "colors": ["any", "pink", "neutrals"],
+        "roles": ["any", "medic", "nomad", "driver", "messenger"]
+    },
+    {
+        "name": "Canvas",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "medic", "rebel", "messenger", "mechanic"]
+    },
+    {
+        "name": "Suede",
+        "vibes": ["any", "desert punk", "retro", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "medic", "driver", "messenger", "mechanic"]
+    },
+    {
+        "name": "Leather",
+        "vibes": ["any"],
+        "colors": ["any", "red", "neutrals"],
+        "roles": ["any", "driver", "rebel", "mechanic", "fighter"]
+    },
+]
+
+tops = [
+    {
+        "name": "crewneck tee",
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any", "scout", "driver", "fighter"]
+    },
+    {
+        "name": "v-neck shirt",
+        "vibes": ["any", "neon", "retro"],
+        "colors": ["any"],
+        "roles": ["any", "driver", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "muscle shirt",
+        "vibes": ["desert punk", "national anthem", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["scout", "rebel", "mechanic", "fighter"]
+    },
+    {
+        "name": "racerback tank",
+        "vibes": ["neon", "desert punk", "national anthem", "rebel"],
+        "colors": ["any"],
+        "roles": ["driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "spaghetti strap tank",
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["scout", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "polo shirt",
+        "vibes": ["any", "retro"],
+        "colors": ["any", "green", "blue", "purple", "pink", "neutrals"],
+        "roles": ["scout", "medic", "driver", "messenger"]
+    },
+    {
+        "name": "hoodie",
+        "vibes": ["any", "neon", "desert punk", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["scout", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "crewneck sweatshirt",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+]
+
+bottoms = [
+    {
+        "name": "jeans",
+        "vibes": ["any"],
+        "colors": ["any", "blue", "neutrals"],
+        "roles": ["any", "medic", "driver", "rebel", "messenger", "mechanic"]
+    },
+    {
+        "name": "cargo pants",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any"]
+    },
+    {
+        "name": "leggings",
+        "vibes": ["any", "neon"],
+        "colors": ["any", "neutrals", "rainbow"],
+        "roles": ["any"]
+    },
+    {
+        "name": "sweatpants",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "medic", "nomad", "messenger"]
+    },
+    {
+        "name": "shorts",
+        "vibes": ["any"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "nomad", "driver", "rebel", "messenger"]
+    },
+    {
+        "name": "cargo shorts",
+        "vibes": ["any", "desert punk", "rebel"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any"]
+    },
+    {
+        "name": "trousers",
+        "vibes": ["desert punk", "national anthem", "retro"],
+        "colors": ["any", "neutrals"],
+        "roles": ["any", "scout", "medic", "driver", "messenger"]
+    },
+]
+
+accessories = [
+    {
+        "name": "blazer",
+        "vibes": ["any", "desert punk", "national anthem", "retro"],
+        "colors": ["any", "blue", "neutrals"],
+        "roles": ["any", "medic", "driver", "messenger"]
+    },
+    {
+        "name": "cardigan",
+        "vibes": ["any", "desert punk", "retro"],
+        "colors": ["any", "neutrals", "rainbow"],
+        "roles": ["any", "medic", "nomad", "messenger"]
+    },
+    {
+        "name": "vest",
+        "vibes": ["any"],
+        "colors": ["any"],
+        "roles": ["any"]
+    },
+    {
+        "name": "waistcoat",
+        "vibes": ["any", "desert punk", "retro"],
+        "colors": ["any", "red", "green", "blue", "purple", "neutrals"],
+        "roles": ["any", "scout", "medic", "nomad", "fighter"]
+    },
 ]
 
 vibes = [
@@ -287,12 +434,12 @@ pronouns = [
     },
 ]
 
-# {
-#         "name": "",
-#         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
-#         "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
-#         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
-#     },
+{
+        "name": "",
+        "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
 
 def getWordsFromChoices(vibe, role, color):
     # turn vibe number into words
@@ -462,6 +609,8 @@ def main():
     core = getPartFromChoices(vibe, role, color, cores)
     top = getPartFromChoices(vibe, role, color, tops)
     bottom = getPartFromChoices(vibe, role, color, bottoms)
+    clothingModifiers = getPartFromChoices(vibe, role, color, clothingModifiers)
+    clothingMaterials = getPartFromChoices(vibe, role, color, clothingMaterials)
     hobby = getPartFromChoices(vibe, role, color, hobbies)
     # decide how many name parts to use
     diceRoll = randint(1,100)
