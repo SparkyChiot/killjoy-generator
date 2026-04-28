@@ -33,7 +33,7 @@ prefixes = [
     {
         "name": "Lord",
         "vibes": ["any" "desert punk", "rebel"],
-        "colors": ["any"],
+        "colors": ["any", "purple"],
         "roles": ["any"]
     },
     {
@@ -51,7 +51,43 @@ prefixes = [
     {
         "name": "Baby",
         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
-        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "Neutral", "rainbow"],
+        "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
+    },
+    {
+        "name": "Queen",
+        "vibes": ["any", "national anthem", "retro"],
+        "colors": ["any", "purple"],
+        "roles": ["any", "nomad", "driver", "fighter"]
+    },
+    {
+        "name": "Agent",
+        "vibes": ["any", "neon", "national anthem", "rebel"],
+        "colors": ["any", "Neutral"],
+        "roles": ["any", "scout", "rebel", "messenger", "fighter"]
+    },
+    {
+        "name": "Sister",
+        "vibes": ["any", "retro"],
+        "colors": ["any", "pink", "Neutral"],
+        "roles": ["any", "medic", "nomad", "driver"]
+    },
+    {
+        "name": "Reverend",
+        "vibes": ["desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any"],
+        "roles": ["any", "scout", "medic", "nomad", "rebel", "messenger"]
+    },
+    {
+        "name": "Mother",
+        "vibes": ["any", "desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "purple", "pink"],
+        "roles": ["any"]
+    },
+    {
+        "name": "Sheriff",
+        "vibes": ["any", "desert punk", "national anthem", "retro", "rebel"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
     },
 ]
@@ -60,7 +96,7 @@ modifiers = [
     {
         "name": "Static",
         "vibes": ["neon", "retro"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "nomad", "rebel", "fighter"]
     },
     {
@@ -84,13 +120,13 @@ modifiers = [
     {
         "name": "Ash",
         "vibes": ["desert punk", "national anthem", "rebel"],
-        "colors": ["red", "neutrals"],
+        "colors": ["red", "Neutral"],
         "roles": ["any", "fighter"]
     },
     {
         "name": "Ghost",
         "vibes": ["desert punk", "national anthem", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "nomad", "fighter"]
     },
     {
@@ -102,13 +138,13 @@ modifiers = [
     {
         "name": "Chrome",
         "vibes": ["neon", "retro", "rebel"],
-        "colors": ["any", "neutrals", "rainbow"],
+        "colors": ["any", "Neutral", "rainbow"],
         "roles": ["any", "driver"]
     },
     {
         "name": "Hollow",
         "vibes": ["desert punk", "national anthem", "retro", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "nomad", "rebel"]
     },
     {
@@ -135,7 +171,7 @@ cores = [
     {
         "name": "Radio",
         "vibes": ["any", "neon", "retro", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "driver", "messenger"]
     },
     {
@@ -150,13 +186,13 @@ clothingModifiers = [
     {
         "name": "Distressed",
         "vibes": ["desert punk", "national anthem", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "nomad", "rebel", "messenger", "mechanic", "fighter"]
     },
     {
         "name": "Weathered",
         "vibes": ["desert punk", "national anthem", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "rebel", "fighter"]
     },
     {
@@ -174,7 +210,7 @@ clothingModifiers = [
     {
         "name": "Frayed",
         "vibes": ["any", "desert punk", "national anthem", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "nomad", "rebel", "mechanic", "fighter"]
     },
     {
@@ -186,7 +222,7 @@ clothingModifiers = [
     {
         "name": "Patchwork",
         "vibes": ["any","desert punk", "national anthem"],
-        "colors": ["any", "red", "neutrals", "rainbow"],
+        "colors": ["any", "red", "Neutral", "rainbow"],
         "roles": ["any", "scout", "medic", "nomad", "rebel", "mechanic"]
     },
     {
@@ -213,31 +249,31 @@ clothingMaterials = [
     {
         "name": "Linen",
         "vibes": ["any", "desert punk", "retro", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "nomad", "messenger"]
     },
     {
         "name": "Silk",
         "vibes": ["neon", "national anthem", "retro"],
-        "colors": ["any", "pink", "neutrals"],
+        "colors": ["any", "pink", "Neutral"],
         "roles": ["any", "medic", "nomad", "driver", "messenger"]
     },
     {
         "name": "Canvas",
         "vibes": ["any", "desert punk", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "rebel", "messenger", "mechanic"]
     },
     {
         "name": "Suede",
         "vibes": ["any", "desert punk", "retro", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "driver", "messenger", "mechanic"]
     },
     {
         "name": "Leather",
         "vibes": ["any"],
-        "colors": ["any", "red", "neutrals"],
+        "colors": ["any", "red", "Neutral"],
         "roles": ["any", "driver", "rebel", "mechanic", "fighter"]
     },
 ]
@@ -258,7 +294,7 @@ tops = [
     {
         "name": "muscle shirt",
         "vibes": ["desert punk", "national anthem", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["scout", "rebel", "mechanic", "fighter"]
     },
     {
@@ -276,13 +312,13 @@ tops = [
     {
         "name": "polo shirt",
         "vibes": ["any", "retro"],
-        "colors": ["any", "green", "blue", "purple", "pink", "neutrals"],
+        "colors": ["any", "green", "blue", "purple", "pink", "Neutral"],
         "roles": ["scout", "medic", "driver", "messenger"]
     },
     {
         "name": "hoodie",
         "vibes": ["any", "neon", "desert punk", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["scout", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
     },
     {
@@ -297,43 +333,43 @@ bottoms = [
     {
         "name": "jeans",
         "vibes": ["any"],
-        "colors": ["any", "blue", "neutrals"],
+        "colors": ["any", "blue", "Neutral"],
         "roles": ["any", "medic", "driver", "rebel", "messenger", "mechanic"]
     },
     {
         "name": "cargo pants",
         "vibes": ["any", "desert punk", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any"]
     },
     {
         "name": "leggings",
         "vibes": ["any", "neon"],
-        "colors": ["any", "neutrals", "rainbow"],
+        "colors": ["any", "Neutral", "rainbow"],
         "roles": ["any"]
     },
     {
         "name": "sweatpants",
         "vibes": ["any", "desert punk", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "nomad", "messenger"]
     },
     {
         "name": "shorts",
         "vibes": ["any"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "nomad", "driver", "rebel", "messenger"]
     },
     {
         "name": "cargo shorts",
         "vibes": ["any", "desert punk", "rebel"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any"]
     },
     {
         "name": "trousers",
         "vibes": ["desert punk", "national anthem", "retro"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "medic", "driver", "messenger"]
     },
 ]
@@ -342,13 +378,13 @@ accessories = [
     {
         "name": "blazer",
         "vibes": ["any", "desert punk", "national anthem", "retro"],
-        "colors": ["any", "blue", "neutrals"],
+        "colors": ["any", "blue", "Neutral"],
         "roles": ["any", "medic", "driver", "messenger"]
     },
     {
         "name": "cardigan",
         "vibes": ["any", "desert punk", "retro"],
-        "colors": ["any", "neutrals", "rainbow"],
+        "colors": ["any", "Neutral", "rainbow"],
         "roles": ["any", "medic", "nomad", "messenger"]
     },
     {
@@ -360,7 +396,7 @@ accessories = [
     {
         "name": "waistcoat",
         "vibes": ["any", "desert punk", "retro"],
-        "colors": ["any", "red", "green", "blue", "purple", "neutrals"],
+        "colors": ["any", "red", "green", "blue", "purple", "Neutral"],
         "roles": ["any", "scout", "medic", "nomad", "fighter"]
     },
 ]
@@ -369,7 +405,7 @@ hobbies = [
     {
         "name": "scour the zones for vintage tech",
         "vibes": ["any"],
-        "colors": ["any", "neutrals"],
+        "colors": ["any", "Neutral"],
         "roles": ["any", "scout", "nomad", "mechanic"]
     },
     {
@@ -381,7 +417,7 @@ hobbies = [
     {
         "name": "make armor out of scrap metal",
         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
-        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "Neutral", "rainbow"],
         "roles": ["any", "nomad", "driver", "rebel", "fighter"]
     },
     {
@@ -393,7 +429,7 @@ hobbies = [
     {
         "name": "broadcast pirate radio signals",
         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
-        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "Neutral", "rainbow"],
         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
     },
 ]
@@ -414,7 +450,7 @@ colors = [
     "blue",
     "purple",
     "pink",
-    "neutrals",
+    "Neutral",
     "rainbow",
 ]
 
@@ -470,7 +506,7 @@ pronouns = [
 {
         "name": "",
         "vibes": ["any", "neon", "desert punk", "national anthem", "retro", "rebel"],
-        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "neutrals", "rainbow"],
+        "colors": ["any", "red", "orange", "yellow", "green", "blue", "purple", "pink", "Neutral", "rainbow"],
         "roles": ["any", "scout", "medic", "nomad", "driver", "rebel", "messenger", "mechanic", "fighter"]
     },
 
@@ -521,7 +557,7 @@ def getWordsFromChoices(vibe, role, color):
     elif color == 7:
         color = "pink"
     elif color == 8:
-        color = "neutrals"
+        color = "Neutral"
     elif color == 9:
         color = "rainbow"
     else:
@@ -561,7 +597,7 @@ def getPronounsPhrase():
     else:
         useTense = "use"
         loveForm = "love"
-    phrase = pronoun1["3rdSingular"] + " " + useTense + " " + pronoun1["3rdSingular"] + "/" + pronoun2["objective"] + " pronouns and " + loveForm + " "
+    phrase = pronoun1["3rdSingular"] + " " + useTense + " " + pronoun1["3rdSingular"] + "/" + pronoun2["objective"] + " pronouns and " + loveForm + " to "
     return phrase
 
 
@@ -619,7 +655,7 @@ def introText():
                 print("5) Blue")
                 print("6) Purple")
                 print("7) Pink")
-                print("8) Neutrals")
+                print("8) Neutral")
                 print("9) Rainbow")
                 try:
                     color = int(input())
@@ -640,10 +676,8 @@ def main():
     prefix = getPartFromChoices(vibe, role, color, prefixes)
     modifier = getPartFromChoices(vibe, role, color, modifiers)
     core = getPartFromChoices(vibe, role, color, cores)
-    top = getPartFromChoices(vibe, role, color, tops)
-    bottom = getPartFromChoices(vibe, role, color, bottoms)
-    clothingModifiers = getPartFromChoices(vibe, role, color, clothingModifiers)
-    clothingMaterials = getPartFromChoices(vibe, role, color, clothingMaterials)
+    top = getPartFromChoices(vibe, role, color, clothingModifiers) + " " + getPartFromChoices(vibe, role, color, clothingMaterials) + " " + getPartFromChoices(vibe, role, color, tops)
+    bottom = getPartFromChoices(vibe, role, color, clothingModifiers) + " " + getPartFromChoices(vibe, role, color, clothingMaterials) + " " + getPartFromChoices(vibe, role, color, bottoms)
     hobby = getPartFromChoices(vibe, role, color, hobbies)
     # decide how many name parts to use
     diceRoll = randint(1,100)
@@ -656,6 +690,10 @@ def main():
     if diceRoll <= 10:
         modifier = "" 
         prefix = ""
+    # if vibe and role = rebel, reroll
+    while vibe == role:
+        if vibe == role:
+            role = choice(roles)
     print(assembleCharacter(vibe, role, color, prefix, modifier, core, top, bottom, hobby, pronounPhrase))
     
 
